@@ -1,0 +1,18 @@
+{% include "basic.html" %}
+
+ {% block content %}
+
+ {% for student in students %}
+ 
+ NAME: {{student.name}}<br>
+ DEPARTMENT: {{student.department}}<br>
+ COLLEGE: {{student.college_name}}<br>
+ ROLLNUMBER: {{student.rollnumber}}<br><hr>
+ 
+ 
+ 
+ {% endfor %}
+ 
+ {% endblock %}
+
+ 
